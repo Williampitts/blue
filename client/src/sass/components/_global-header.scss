@@ -1,0 +1,20 @@
+.global-header {
+
+}
+
+.global-header__brand {
+	background: black;
+	float: left;
+	width: 150px;
+}
+
+.global-header__search {
+	background: #ababab;
+	float: right;
+	width: 400px;
+}
+
+.global-header__nav {
+	background: #ebebeb;
+	clear: both;
+}

@@ -1,0 +1,16 @@
+.t-prod-details {
+	@extend .container;
+}
+
+.t-prod-details__row {
+	@extend .row;
+}
+
+.t-prod-details__img-container {
+	@extend .col-lg-6;
+}
+
+.t-prod-details__details {
+	@extend .col-lg-6;
+}
+

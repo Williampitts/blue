@@ -1,0 +1,120 @@
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $colour-body;
+    font-family: $font-family-body;
+}
+
+// TODO make a generator for all these headings!
+h1, .h1 {
+    color: $colour-heading;
+    font-family: $font-family-heading;
+    @include rem($font-size-e);
+    line-height: $line-height-e;
+    margin-bottom: #{$line-height-e}em;
+}
+
+h2, .h2 {
+    color: $colour-heading;
+    font-family: $font-family-heading;
+    @include rem($font-size-d);
+    line-height: $line-height-d;
+    margin-bottom: #{$line-height-d}em;
+}
+
+h3, .h3 {
+    color: $colour-heading;
+    font-family: $font-family-heading;
+    @include rem($font-size-c);
+    line-height: $line-height-c;
+    margin-bottom: #{$line-height-c}em;
+}
+
+// Probably need an h4 size too
+
+p, .p {
+    font-family: $font-family-body;
+    @include rem($font-size-b);
+    line-height: $line-height-b;
+    margin-bottom: #{$line-height-b}em;
+}
+
+label,
+.label {
+    color: $colour-label;
+    display: block;
+    text-transform: uppercase;
+    @include rem($font-size-b);
+    line-height: $line-height-b;
+    margin-bottom: #{$line-height-b}em;
+}
+
+legend,
+.legend {
+    // color: $colour-primary;
+    // @include rem($type-legend-font-size);
+    // font-family: $heading-font-family;
+    // line-height: $type-legend-line-height;
+    // margin-bottom: 1em;
+}
+
+
+
+// Clears the top and bottom margin (preserves vertical rhythm)
+.type-clear-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+    & > * {
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+}
+
+
+// Move to general utils
+.rm-margin {margin-bottom: 0; margin-top: 0;}
+.rm-margin-top {margin-top: 0;}
+.rm-margin-bottom {margin-bottom: 0;}
+
+.dim-el {opacity: .8;}
+
+.strong {
+    color: #4d4d4d;
+    //font-family: $body-font-family-bold;
+    font-weight: normal;
+}
+
+strong {@extend .strong;}
+em {@extends .strong;}
+
+
+a {
+    //color: $text-colour-link;
+}
+
+.list-std {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+li {
+    @include rem($font-size-b);
+    line-height: $line-height-b;
+    margin-bottom: #{$line-height-b}em;
+}
+
+dl {
+    overflow:hidden;
+}
+
+dt, dd {
+    @extend li;
+}
+
+dd {
+    text-align: right;
+}

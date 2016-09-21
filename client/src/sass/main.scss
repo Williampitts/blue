@@ -1,0 +1,13 @@
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utils';
+
+@import 'templates/layout';
+@import 'templates/product-details';
+
+@import 'components/global-header';
