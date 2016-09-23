@@ -1,0 +1,4 @@
+// Full border radius
+@mixin border-radius($radius: $border-radius) {
+    border-radius: $radius;
+}

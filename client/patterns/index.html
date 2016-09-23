@@ -1,14 +1,46 @@
-{% extends "layouts/default.html" %}
-{% set title = "Twig.js templating test" %}
-{% set pageTitle = "Use Twig from the start!" %}
-{% set benefits = ["Fast!", "Easy!", "Efficient!"] %}
+{% extends "layouts/basic.html" %}
 
-{% block content %}
-<h3>{{ pageTitle }}</h3>
 
-<ul>
-    {% for value in benefits %}
-        <li>{{ value }}</li>
-    {% endfor %}
-</ul>
+{% block body %}
+
+    <h1>Blueprint Pattern Library</h1>
+
+    <!-- Abstract -->
+    <section>
+    	<h2>Mixins & Functions???</h2>
+    </section>
+
+    <!-- Base -->
+    <section>
+    	<h2>Colours & Typography</h2>
+    	<ul>
+    		<li><a href="">Colours</a></li>
+    		<li><a href="/components/typography.html">Typography</a></li>
+    	</ul>
+    </section>
+
+    <section>
+    	<h2>Templates</h2>
+    	<p>Templates are low-fidelity groupings of components into logical units. Think of them as abstract layout designs. See <a href="http://bradfrost.com/blog/post/atomic-web-design/#templates">templates</a> for an example.</p>
+    	<ul>
+    		<li><a href="">Home template</a></li>
+    		<li><a href="">Category template</a></li>
+    		<li><a href="">Product list template</a></li>
+    		<li><a href="/templates/product-details.html">Product details template</a></li>
+    		<li><a href="">Basket template</a></li>
+    	</ul>
+    </section>
+
+    <section>
+    	<h2>Pages</h2>
+    	<p>Pages are instances of templates. They exist in hi-fidelity and are concrete implementations. See <a href="http://bradfrost.com/blog/post/atomic-web-design/#pages">pages</a> for an example.</p>
+    	<ul>
+    		<li><a href="">Home page</a></li>
+    		<li><a href="">Category page</a></li>
+    		<li><a href="">Product list page</a></li>
+    		<li><a href="">Product details page</a></li>
+    		<li><a href="">Basket page</a></li>
+    	</ul>
+    </section>
+
 {% endblock %}

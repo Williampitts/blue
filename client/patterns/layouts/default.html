@@ -3,10 +3,11 @@
 	    <meta charset="UTF-8">
 	    <title>{{ title }}</title>
 	    <link rel="stylesheet" href="/styles/main.css" />
+	    <link rel="stylesheet" href="/styles/docs.css" />
 	</head>
 	<body>
-		<div class="container">
-	    {% block content %}{% endblock %}
+		<div class="container docs-ly-default">
+	    {% block body %}{% endblock %}
 	    </div>
 	</body>
 </html>

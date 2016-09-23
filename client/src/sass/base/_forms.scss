@@ -1,0 +1,26 @@
+.form-control {
+	display: block;
+	width: 100%;
+	padding: $input-padding-y $input-padding-x;
+	@include rem($font-size-b);
+	line-height: $line-height-b;
+	color: $input-color;
+	background-color: $input-bg;
+	background-image: none;
+	background-clip: padding-box;
+	border: $input-border-width solid $input-border-colour;
+	@include border-radius($input-border-radius);
+	// box-shadow mixin allow for null
+	// transition mixin allow for null
+	// Unstyle the caret on `<select>`s in IE10+.
+	&::-ms-expand {
+		background-color: transparent;
+		border: 0;
+	}
+	// Focus state
+
+}
+
+.form-group {
+	margin-bottom: 10px;
+}

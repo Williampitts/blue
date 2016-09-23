@@ -1,28 +1,68 @@
-{% extends '../layouts/full-layout.html' %}
+{% extends '../layouts/default.html' %}
 
-{% block content %}
-
+{% block body %}
 
 	<section class="t-prod-details">
 		<div class="t-prod-details__row">
 			<div class="t-prod-details__img-container">
-				<img src="https://placeholdit.imgix.net/~text?txtsize=33&w=350&h=150" class="u-img-responsive" />
+				<img src="http://placehold.it/350x350/d6f0f9/444444?text=main image" class="u-img-responsive" />
 			</div>
+
 			<div class="t-prod-details__details">
 				<h1>Product Title</h1>
 				<p>&pound;25.99 (was £30.00)</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa eget ullamcorper luctus. Cras lacinia eros magna. Nam aliquam sagittis risus, eget tempus quam viverra nec. Cras eget ipsum elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ut luctus eros. Duis augue ligula, lobortis at nisl in, accumsan congue odio. Fusce eu tincidunt sem, in cursus dui.</p>
 
 				<div>
-					Colour swatches
+					<p class="strong">Colours</p>
+					<ul class="list-linear">
+						<li class="list-linear__item"><a href=""><img src="http://placehold.it/50x50/d6f0f9/ffffff?text=main image" class="u-img-responsive" alt="swatch" /></a></li>
+						<li class="list-linear__item"><a href=""><img src="http://placehold.it/50x50/d6f0f9/ffffff?text=main image" class="u-img-responsive" alt="swatch" /></a></li>
+						<li class="list-linear__item"><a href=""><img src="http://placehold.it/50x50/d6f0f9/ffffff?text=main image" class="u-img-responsive" alt="swatch" /></a></li>
+						<li class="list-linear__item"><a href=""><img src="http://placehold.it/50x50/d6f0f9/ffffff?text=main image" class="u-img-responsive" alt="swatch" /></a></li>
+						<li class="list-linear__item"><a href=""><img src="http://placehold.it/50x50/d6f0f9/ffffff?text=main image" class="u-img-responsive" alt="swatch" /></a></li>
+						<li class="list-linear__item"><a href=""><img src="http://placehold.it/50x50/d6f0f9/ffffff?text=main image" class="u-img-responsive" alt="swatch" /></a></li>
+					</ul>
 				</div>
 
 				<div>
-					add to bag form
+					<form>
+						<div class="form-group row">
+							<label for="field-size" class="col-sm-2 col-form-label">Size</label>
+							<div class="col-sm-10">
+								<select id="field-size" class="form-control">
+									<option>Select size</option>
+									<option>S</option>
+									<option>M</option>
+									<option>L</option>
+								</select>
+							</div>
+							<div class="col-sm-10 offset-sm-2">size guide</div>
+						</div>
+						<div class="form-group row">
+							<label for="field-qty" class="col-sm-2 col-form-label">Quantity</label>
+							<div class="col-sm-10">
+								<input type="number" id="field-qty" min="1" max="10" value="1" name="qty" class="form-control" />
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn">Buy now</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	</section>
 
+		<div class="t-prod-details__cross-sell">
+			<ul class="row">
+				<li class="col-xs-2"><img src="http://placehold.it/144x144/d6f0f9/ffffff" alt="thumbnail" class="u-img-responsive" /></li>
+				<li class="col-xs-2"><img src="http://placehold.it/144x144/d6f0f9/ffffff" alt="thumbnail" class="u-img-responsive" /></li>
+				<li class="col-xs-2"><img src="http://placehold.it/144x144/d6f0f9/ffffff" alt="thumbnail" class="u-img-responsive" /></li>
+				<li class="col-xs-2"><img src="http://placehold.it/144x144/d6f0f9/ffffff" alt="thumbnail" class="u-img-responsive" /></li>
+				<li class="col-xs-2"><img src="http://placehold.it/144x144/d6f0f9/ffffff" alt="thumbnail" class="u-img-responsive" /></li>
+				<li class="col-xs-2"><img src="http://placehold.it/144x144/d6f0f9/ffffff" alt="thumbnail" class="u-img-responsive" /></li>
+			</ul>
+		</div>
+	</section>
 
 {% endblock %}

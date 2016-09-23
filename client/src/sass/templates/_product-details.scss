@@ -7,10 +7,13 @@
 }
 
 .t-prod-details__img-container {
-	@extend .col-lg-6;
+	@extend .col-lg-7;
 }
 
 .t-prod-details__details {
-	@extend .col-lg-6;
+	@extend .col-lg-4, .offset-lg-1;
 }
 
+.t-prod-details__cross-sell {
+	margin-top: $spacer-vertical;
+}

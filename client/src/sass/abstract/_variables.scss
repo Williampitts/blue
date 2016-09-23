@@ -1,13 +1,20 @@
-
+// Customisations
+//
+// -----------------------------
+$border-radius: 0;
+$spacer-vertical: 20px;
 
 // Typography
 //
 // -----------------------------
-$font-family-heading: 'Arial Black', Gadget, sans-serif;
-$font-family-body: 'Trebuchet MS', Helvetica, sans-serif;
-$font-family-console: 'Lucida Console', Monaco, monospace;
+$font-family-bold: 'robotobold';
+$font-family-regular: 'robotoregular';
+$font-family-lite: 'robotolight';
+// TODO add in any bold fonts for higher font weights
 
 // All adhere to a 18px baseline. Adjust as necessary but retain Vertical Rhythm
+$baseline: 1.8;
+
 $font-size-a: 1.0; /* 10px */
 $font-size-b: 1.4; /* 14px */
 $font-size-c: 2.4; /* 24px */
@@ -16,7 +23,7 @@ $font-size-e: 4.0; /* 40px */
 $font-size-f: 6.0; /* 60px */
 
 $line-height-a: 1.8; /* 18px */
-$line-height-b: 1.2857; /* 18px */
+$line-height-b: 1.286; /* 18px */
 $line-height-c: 1.5; /* 36px */
 $line-height-d: 1.2; /* 36px */
 $line-height-e: 1.35; /* 54px */
@@ -24,11 +31,26 @@ $line-height-d: 1.2; /* 36px */
 $line-height-f: 1.2; /* 72px */
 
 
+// Colours
+//
+// -----------------------------
+// TODO create a pallet of colours and use those througout
+// e.g. $colour-light-grey, $colour-dark-gray
+$colour-black: 		#000000;
+$colour-dark-gray:	#4d4d4d;
 $colour-heading:                #4d4d4d !default;
 $colour-subheading:             #4d4d4d !default;
-$colour-body:                   #808080 !default;
+$colour-body:                   $colour-black;
 $colour-label:                  #4d4d4d !default;
 
 
-// Colours
 
+
+// Forms
+//
+// -----------------------------
+$input-padding-y: 4px;
+$input-padding-x:  8px;
+$input-border-width: 1px;
+$input-border-colour: $colour-dark-gray;
+$input-border-radius: 3px;
