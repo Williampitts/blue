@@ -4,6 +4,7 @@
 	padding: $input-padding-y $input-padding-x;
 	@include rem($font-size-b);
 	line-height: $line-height-b;
+	line-height: 36px;
 	color: $input-color;
 	background-color: $input-bg;
 	background-image: none;
@@ -21,6 +22,19 @@
 
 }
 
+// http://stackoverflow.com/questions/5780109/removing-rounded-corners-from-a-select-element-in-chrome-webkit
+select.form-control {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+
+    height: 36px;
+    line-height: 1;
+}
+
 .form-group {
 	margin-bottom: 10px;
 }
+

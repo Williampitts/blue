@@ -1,0 +1,71 @@
+{% extends '../../layouts/default.html' %}
+
+{% block body %}
+	
+
+
+	<section class="container">
+		<div class="row">
+			<!-- .template-pdp__image-container -->
+			<div class="col-lg-5">
+
+				<!-- .image-gallery -->
+				<div class="image-gallery">
+					<img src="http://placehold.it/350x350?text=main image" class="u-img-responsive" />
+					<ul class="image-gallery__thumbnails" id="slider">
+						{% for i in 0..5 %}
+							<li class="">
+								<img src="http://placehold.it/100x100?text=main image" class="" alt="swatch" width="100" />
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+	
+			<!-- .template-pdp__info-container -->
+			<div class="col-lg-6 offset-lg-1">
+				{% include 'partials/product-description.html' %}
+				<div>
+					{% include 'partials/swatches.html' %}
+				</div>
+				<div class="">
+					{% include 'partials/add-to-bag.html' %}
+				</div>
+				<div class="u-spacer-v">
+					{% include 'partials/wishlist.html' %}
+				</div>
+				<div class="slab u-spacer-v">
+					{% include 'partials/store-stock-check.html' %}
+				</div>
+			</div>
+		</div>
+
+		<div class="t-prod-details__cross-sell">
+			<ul class="row">
+				{% for i in 0..5 %}
+					<li class="col-xs-2">
+						{% include 'partials/product-thumbnail.html' %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+
+	{% include 'partials/pdp-promotion.html' %}
+{% endblock %}
+
+{% block scripts %}
+	{{ parent() }}
+	<script src="/scripts/slick.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#slider').slick({
+			dots: false,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 4,
+			slidesToScroll: 4
+		});
+	});
+	</script>
+{% endblock %}

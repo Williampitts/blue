@@ -1,0 +1,24 @@
+{% extends '../../layouts/default.html' %}
+
+
+{% block body %}
+
+	<div class="container">
+		<ol class="row">
+			{% for i in 0..11 %}
+			<li class="col-xs-3">
+				<article class="card">
+					<a href="" class="card__media" style="display: block; margin-bottom: 10px;">
+						<img src="http://placehold.it/144x144/{{bgcolour}}/{{txtcolour}}" alt="thumbnail" class="u-img-responsive" />
+					</a>
+					<div class="card__content" style="text-align: center;">
+						<h2 class="label baseline-margin-none">Product Title</h2>
+						<p>&pound;25.99</p>
+					</div>
+				</article>
+			</li>
+			{% endfor %}
+		</ol>
+	</div>
+
+{% endblock %}

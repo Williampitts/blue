@@ -11,14 +11,15 @@ gulp.task('sass:dev', () =>
 		.pipe(gulp.dest('./dist/styles')));
 
 
-gulp.task('patterns:watch', () => {
+gulp.task('watch', () => {
 	gulp.watch('client/src/sass/**/*.scss', ['sass:dev']);
-    gulp.watch('client/src/fonts/*.{woff,woff2}', ['fonts:copy:patterns']);
-	gulp.watch('client/patterns/**/*.html', ['patterns:templates']);
+    gulp.watch('client/src/scripts/**/*.js', ['scripts']);
+    gulp.watch('client/src/fonts/*.{woff,woff2}', ['fonts:copy']);
+	gulp.watch('client/src/patterns/**/*.html', ['templates']);
 })
 
 
-gulp.task('patterns:server', function () {
+gulp.task('server', function () {
     browserSync.init({
         files: [
             'dist/*.html',
@@ -32,15 +33,19 @@ gulp.task('patterns:server', function () {
     });
 });
 
-gulp.task('patterns:templates', () => 
-	gulp.src('./client/patterns/**/*.html')
+gulp.task('templates', () => 
+	gulp.src('./client/src/patterns/**/*.html')
 		.pipe(twig())
 		.pipe(gulp.dest('dist')));
 
-gulp.task('fonts:copy:patterns', () => 
+gulp.task('fonts:copy', () => 
     gulp.src('./client/src/fonts/*.{woff,woff2}')
         .pipe(gulp.dest('./dist/fonts')));
 
 
-gulp.task('patterns:dev', () => 
-	runSequence('sass:dev', 'patterns:templates', 'fonts:copy:patterns', 'patterns:server', 'patterns:watch'));
+gulp.task('scripts', () => 
+    gulp.src('./client/src/scripts/**/*.js')
+        .pipe(gulp.dest('./dist/scripts')));
+
+gulp.task('default', () => 
+	runSequence('sass:dev', 'scripts', 'templates', 'fonts:copy', 'server', 'watch'));

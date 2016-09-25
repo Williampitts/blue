@@ -57,7 +57,7 @@ legend, .legend {
 }
 
 // These are utility classes that will need to be automated for the above typographic elements
-.baseline-margin-none {}
+.baseline-margin-none {margin: 0;}
 .baseline-margin-bottom-1 {}
 .baseline-margin-bottom-2 {}
 .baseline-margin-bottom-3 {}
@@ -77,7 +77,11 @@ strong {@extend .strong;}
 
 
 a {
-    //color: $text-colour-link;
+    color: $colour-body;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .list-std {

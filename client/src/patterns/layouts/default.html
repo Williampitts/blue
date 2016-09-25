@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 	    <meta charset="UTF-8">
@@ -9,5 +10,8 @@
 		<div class="container docs-ly-default">
 	    {% block body %}{% endblock %}
 	    </div>
+	    {% block scripts %}
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	    {% endblock %}
 	</body>
 </html>

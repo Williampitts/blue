@@ -1,0 +1,73 @@
+// Basic btn class
+//
+// Note: .btn can be applied to button, anchor, label, span, input
+// 		 the code below should eliminate the differences. Remember
+//		 to check pseudo states.
+// ------------------------------
+.btn {
+	-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid black;
+	//border-radius: 4px;
+	color: #000;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'robotoregular';
+	font-size: 12px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 34px;
+	padding: 0 2em;
+	margin: 0;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	vertical-align: middle;
+
+	// Stay accessible
+	&:focus {
+		outline: 0;
+	}
+
+	// Colour modifiers
+	// ------------------------------
+	&--primary {
+		background-color: #29abe2;
+		border-color: #29abe2;
+		color: #fff;
+	}
+
+	&--success {
+		background-color: #3c763d;
+		border-color: #3c763d;
+		color: #fff;
+	}
+
+	&--info {
+		background-color: lightblue;
+		border-color: lightblue;
+		color: #fff;
+	}
+
+	&--warning {
+		background-color: #8a6d3b;
+		border-color: #8a6d3b;
+		color: #fff;
+	}
+
+	&--danger {
+		background-color: #a94442;
+		border-color: #a94442;
+		color: #fff;
+	}
+
+	// Size modifiers
+	// ------------------------------
+	&--lg {
+		font-size: 20px;
+	}
+
+	&--stretch {
+		width: 100%;
+	}
+}
