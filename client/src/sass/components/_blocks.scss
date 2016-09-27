@@ -1,0 +1,14 @@
+
+.block {
+
+    // background-color: rgb(204, 235, 243);
+    color: rgb(72, 72, 72);
+    padding: 0.8em 0px;
+    border-radius: 4px;
+    overflow: hidden;
+
+	&--success {
+		background-color: #d4ece6;	// TODO use same colours as buttons
+	}
+}
+
