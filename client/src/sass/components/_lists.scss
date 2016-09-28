@@ -10,3 +10,8 @@
 .list-linear__item {
 	display: inline-block;
 }
+
+// Put media object and similar components in a list to give them vertical seperation
+.list-media__item {
+	margin-bottom: 10px;
+}

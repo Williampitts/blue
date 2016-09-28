@@ -1,0 +1,23 @@
+.media {
+	overflow: hidden;
+}
+
+.media__media {
+	float: left;
+	margin-right: 10px;
+
+	&--v-align {
+		display: flex;
+		align-items: center;
+	}
+
+	&--pull-right {
+		float: right;
+		margin-left: 10px;
+		margin-right: 0;
+	}
+}
+
+.media__body {
+	overflow: hidden;
+}

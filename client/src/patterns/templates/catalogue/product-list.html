@@ -4,7 +4,18 @@
 {% block body %}
 
 	<div class="container">
-		<ol class="row">
+
+		<div class="banner-jumbo">
+			<div class="banner-jumbo__bg">
+				<img src="http://placehold.it/1110x300?text=mobile banner" alt="thumbnail" class="banner-jumbo__bg-image u-img-responsive" />
+			</div>
+			<div class="banner-jumbo__content banner-jumbo__content--bottom-right text-right">
+				<h1>Heading</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+		</div>
+
+		<ol class="row u-spacer-v">
 			{% for i in 0..11 %}
 			<li class="col-xs-3">
 				<article class="card">
@@ -21,4 +32,4 @@
 		</ol>
 	</div>
 
-{% endblock %}
+{% endblock %}	

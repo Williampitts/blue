@@ -1,0 +1,29 @@
+.alert {
+    padding: 0.8em;
+    border-radius: 4px;
+    overflow: hidden;
+
+	&--success {
+		background-color: $colour-feedback-success;	// TODO use same colours as buttons
+	}
+
+	&--info {
+		background-color: $colour-feedback-info;	// TODO use same colours as buttons
+	}
+
+	&--warning {
+		background-color: $colour-feedback-warning;	// TODO use same colours as buttons
+	}
+
+	&--danger {
+		background-color: $colour-feedback-danger;	// TODO use same colours as buttons
+	}
+}
+
+// Option icon
+.alert__icon {
+	color: #fff;
+	float: left;
+	margin-right: 10px;
+}
+

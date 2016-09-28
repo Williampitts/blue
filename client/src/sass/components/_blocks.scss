@@ -12,3 +12,79 @@
 	}
 }
 
+
+
+// Banner with optional text box
+// TODO provide 8 text-box 'zones' top left middle bottom with topleft topright bottomleft bottomright
+
+.banner-jumbo {
+	position: relative;
+}
+
+.banner-jumbo__bg {
+
+}
+
+.banner-jumbo__content {
+	position: absolute;
+	width: 40%;
+
+	&--center {
+		transform: translateX(-50%);
+		transform: translateY(-50%);
+	}
+
+	&--top,
+	&--bottom {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&--top {
+		top: 10px;
+	}
+
+	&--bottom {
+		bottom: 10px;
+	}
+
+	&--left,
+	&--right {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&--left {
+		left: 10px;
+	}
+
+	&--right {
+		right: 10px;
+	}
+
+	&--top-left,
+	&--bottom-left {
+		left: 10px;
+	}
+
+	&--top-left {
+		top: 10px;
+	}
+
+	&--bottom-left {
+		bottom: 10px;
+	}
+
+	&--top-right,
+	&--bottom-right {
+		right: 10px;
+	}
+
+	&--top-right {
+		top: 10px;
+	}
+
+	&--bottom-right {
+		bottom: 10px;
+	}
+}

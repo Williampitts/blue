@@ -1,0 +1,74 @@
+{% extends '../../layouts/default.html' %}
+
+{% block body %}
+	
+	<section class="container u-spacer-v">
+
+		<!-- .template-home__feature-container -->
+		<div>
+			<img src="http://placehold.it/1140x370?text=main feature" class="u-img-responsive" alt="swatch" />
+		</div>
+
+		<!-- .template-home__sub-feature-container -->
+		<div class="row u-spacer-v">
+			<div class="col-lg-6">
+				<img src="http://placehold.it/570x200?text=sub feature" class="u-img-responsive" />
+			</div>
+			<div class="col-lg-6">
+				<img src="http://placehold.it/570x200?text=sub feature" class="u-img-responsive" />
+			</div>
+		</div>
+
+		<div class="row u-spacer-v">
+			<!-- .template-pdp__image-container -->
+			<div class="col-lg-4">
+				<ul class="list-media">
+					{% for i in 0..2 %}
+						<li class="list-media__item">
+							<article class="media">
+								<a href="" class="media__media">
+									<img src="http://placehold.it/100x100?text=media" alt="thumbnail" width="100" />
+								</a>
+								<div class="media__body baseline-margin-none-all">
+									<h2 class="h4">Promo</h2>
+									<p class="tp-sml">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa eget ullamcorper luctus. Cras lacinia eros magna.</p>
+								</div>
+							</article>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="col-lg-4">
+				<ul class="list-media">
+					<li class="list-media__item">
+						<img src="http://placehold.it/340x100?text=banner" class="u-img-responsive" />
+					</li>
+					<li class="list-media__item">
+						<img src="http://placehold.it/340x100?text=banner" class="u-img-responsive" />
+					</li>
+					<li class="list-media__item">
+						<img src="http://placehold.it/340x100?text=banner" class="u-img-responsive" />
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4">
+				<ul class="list-media">
+					{% for i in 0..2 %}
+						<li class="list-media__item">
+							<article class="media">
+								<a href="" class="media__media media__media--pull-right">
+									<img src="http://placehold.it/100x100?text=media" alt="thumbnail" width="100" />
+								</a>
+								<div class="media__body baseline-margin-none-all">
+									<h2 class="h4">Promo</h2>
+									<p class="tp-sml">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa eget ullamcorper luctus. Cras lacinia eros magna.</p>
+								</div>
+							</article>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

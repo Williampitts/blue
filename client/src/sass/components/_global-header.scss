@@ -1,11 +1,12 @@
 .global-header {
-
+	padding-bottom: $spacer-vertical;
+	padding-top: $spacer-vertical;
 }
 
 .global-header__brand {
-	background: black;
-	float: left;
-	width: 150px;
+	// background: black;
+	// float: left;
+	// width: 150px;
 }
 
 .global-header__search {

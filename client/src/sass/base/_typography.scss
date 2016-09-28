@@ -64,12 +64,32 @@ legend, .legend {
 
 }
 
+.tp-sml {
+    font-family: $font-family-regular;
+    @include rem($font-size-a);
+    line-height: $line-height-a;
+    margin-bottom: 1em;
+}
+
 // These are utility classes that will need to be automated for the above typographic elements
 .baseline-margin-none {margin: 0;}
+.baseline-margin-none-all * {margin: 0;}
 .baseline-margin-bottom-1 {}
 .baseline-margin-bottom-2 {}
 .baseline-margin-bottom-3 {}
 .baseline-margin-bottom-4 {}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
 
 
 .dim-el {opacity: .8;}

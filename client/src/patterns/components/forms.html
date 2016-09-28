@@ -2,46 +2,53 @@
 
 {% block body %}
 
-	<p>Base buttons</p>
-	<button class="btn">button</button>
-	<input type="button" class="btn" value="input" />
-	<span class="btn">span</span>
-	<a href="" class="btn">anchor</a>
-	<label class="btn">label</label>
+	<div class="u-spacer-v">
+		<p>Base buttons</p>
+		<button class="btn">button</button>
+		<input type="button" class="btn" value="input" />
+		<span class="btn">span</span>
+		<a href="" class="btn">anchor</a>
+		<label class="btn">label</label>
+	</div>
 
-	<p>Button colours</p>
+	<div class="u-spacer-v">
+		<p>Button colours</p>
 
-	<button class="btn">default</button>
-	<button class="btn btn--primary">primary</button>
-	<button class="btn btn--info">info</button>
-	<button class="btn btn--success">success</button>
-	<button class="btn btn--warning">warning</button>
-	<button class="btn btn--danger">danger</button>
+		<button class="btn">default</button>
+		<button class="btn btn--primary">primary</button>
+		<button class="btn btn--info">info</button>
+		<button class="btn btn--success">success</button>
+		<button class="btn btn--warning">warning</button>
+		<button class="btn btn--danger">danger</button>
+	</div>
 
-	<p>Button sizes</p>
-	<button class="btn">default</button>
-	<button class="btn btn--lg">large</button>
-	<button class="btn btn--stretch">stretch</button>
-	
-
-
-	<h2>Form elements</h2>
-	<input type="text" placeholder="form input" class="form-control" />
-	<input type="number" min="1" max="5" value="1" class="form-control" />
-
-	<select class="form-control">
-		<option>chose option</option>
-		<option>one</option>
-		<option>two</option>
-		<option>three</option>
-	</select>
-
-	<input type="radio" class="form-control" />
-	<input type="checkbox" class="form-control" />
+	<div class="u-spacer-v">
+		<p>Button sizes</p>
+		<button class="btn">default</button>
+		<button class="btn btn--lg">large</button>
+		<button class="btn btn--stretch u-spacer-v">stretch</button>
+	</div>
 
 
-	<div class="form-control-group">
-		<label>A label</label>
+	<div class="u-spacer-v">
+		<h2>Form elements</h2>
 		<input type="text" placeholder="form input" class="form-control" />
+		<input type="number" min="1" max="5" value="1" class="form-control" />
+
+		<select class="form-control">
+			<option>chose option</option>
+			<option>one</option>
+			<option>two</option>
+			<option>three</option>
+		</select>
+
+		<input type="radio" class="form-check-input" />
+		<input type="checkbox" class="form-check-input" />
+
+
+		<div class="form-control-group">
+			<label>A label</label>
+			<input type="text" placeholder="form input" class="form-control" />
+		</div>
 	</div>
 {% endblock %}
